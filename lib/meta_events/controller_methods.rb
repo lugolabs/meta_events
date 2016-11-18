@@ -37,7 +37,8 @@ module MetaEvents
     # When we get included into a controller, declare these methods as helper methods, so they're available to views,
     # too.
     included do
-      helper_method :meta_events_define_frontend_event, :meta_events_defined_frontend_events, :meta_events_tracker
+      # TODO fix for Rails 5
+      # helper_method :meta_events_define_frontend_event, :meta_events_defined_frontend_events, :meta_events_tracker
     end
   end
 end
